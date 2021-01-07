@@ -1,4 +1,4 @@
-# [Jus.com.br](https://jus.com.br) - Teste técnico para desenvoledor back-end
+# [Jus.com.br](https://jus.com.br) - Teste técnico para desenvoledor back-end(JR)
 
 Este teste faz parte do nosso processo de contratação no Jus para as vagas de back-end. Deve demorar entre 2 e 4 dias, dependendo da sua experiência. Espero que você se divirta tanto quanto nós desenvolvendo este teste!
 
@@ -14,6 +14,13 @@ A API deve possuir as operações básicas: criar, exibir e atualizar tarefas, n
 - É preciso ter um `README` com instruções claras de uso;
 - Pode usar Ruby, Ruby on Rails, Sinatra ou Hanami;
 - Sinta-se a vontade para usar qualquer recurso que possa ajuda-lo;
+
+## Especificações técnicas
+O modelo(model de tarefas) pode conter quantas colunas você achar necessário, porém, obrigatóriamente, deve conter no mínimo as seguintes colunas:
+
+- title
+- description
+- done/done_at
 
 ## Submissão
 
