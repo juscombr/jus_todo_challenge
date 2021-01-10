@@ -15,7 +15,7 @@ module Api
         
         # Criar tarefa
         def create
-            task = Task.new(task_params)
+            task = Task.new(create_params)
             if task.save
                 render json: {status:'SUCCESS', message:'Tarefa criada!', data:task}, status: :ok
             else
@@ -43,7 +43,7 @@ module Api
         # Parametros aceitos
         private
         def create_params
-            params.require(:title, :description, :done_at)
+            params.permit(:title, :description, :done_at)
         end
 
         def update_params

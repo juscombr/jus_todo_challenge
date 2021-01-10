@@ -10,7 +10,6 @@
 20.times  do
 	Task.create({
 		title: Faker::Book.title,
-        description: Faker::Lorem.sentence,
-        done_at: DateTime.now
+        description: Faker::Lorem.sentence
 	})
 end
