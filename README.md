@@ -1,24 +1,43 @@
-# README
+# TODOLIST - API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API de lista de tarefas
 
-Things you may want to cover:
+## Instruções para executar o projeto:
 
-* Ruby version
+### ambiente
 
-* System dependencies
+* Ruby 2.7
 
-* Configuration
+* Rails 6.1.0
 
-* Database creation
+### dependências do projeto
 
-* Database initialization
+- faker
+- rspec
+- rake
+- httparty
 
-* How to run the test suite
+### criando banco de dados
 
-* Services (job queues, cache servers, search engines, etc.)
+- `rails db:create`
+- `rails db:migrate`
+- `rails db:seed`
 
-* Deployment instructions
+### executando projeto
 
-* ...
+- `rails s`
+
+### executando testes
+
+- `rake spec`
+
+## Rotas da API
+
+| Verb | URI  Pattern | Controller#Action|
+|------|--------------|------------------|
+|GET  |  /api/tasks(.:format) | api/tasks#index |
+|POST |  /api/tasks(.:format) | api/tasks#create|
+|GET  |  /api/tasks/:id(.:format) | api/tasks#show|
+|PATCH | /api/tasks/:id(.:format) | api/tasks#update|
+|PUT   | /api/tasks/:id(.:format) | api/tasks#update|
+|DELETE| /api/tasks/:id(.:format) | api/tasks#destroy|
