@@ -16,6 +16,7 @@ API de lista de tarefas
 - rspec
 - rake
 - httparty
+- sqlite3
 
 ### criando banco de dados
 
